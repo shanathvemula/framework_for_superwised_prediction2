@@ -1,0 +1,66 @@
+{%  load static %}
+<html>
+<head>
+    <title>Supervised Prediction</title>
+    <link rel="stylesheet" href="{% static 'js/bootstrap.js' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <script src="https://kit.fontawesome.com/951d587519.js" crossorigin="anonymous"></script>
+    <style>
+        }
+        strong{
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 100px
+        }
+        p{
+        font-family: 'Great Vibes', cursive;
+        font-size: 20px;
+        }
+        .img{
+            border-radius: 20%;
+            float: right;
+            border: darkgrey 3px groove;
+        }
+        #center{
+            text-align: center;
+            padding-top: 25%;
+            background-size: auto;
+            padding-bottom: 12%;
+        }
+        nav{
+            background-color: #FFFFFF;
+            text-align: left;
+            font-family: 'Times New Roman';
+            color: #fbfcfc;
+        }
+        .forecast {
+            margin: 0;
+            padding: .3rem;
+            background-color: #eee;
+            font: 1rem 'Fira Sans', sans-serif;
+        }
+        .forecast > h1,
+        .day-forecast {
+            margin: .5rem;
+            padding: .3rem;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top">
+    <a href=" " class="navbar-brand"><img class="img" src="{% static 'img/Eveluion.jpg' %}" width="100" height="50"></a>
+    <a href="/" class="nav-link"><i class="fas fa-home ui-icon-arrow-4-diag"></i></a>
+    <a href="/#aim" class="nav-link">Aim</a>
+    <a href="/#Introduction" class="nav-link">Introduction</a>
+    <a href="/#Tech" class="nav-link">Technologies Used</a>
+    <a href="/upload/" class="nav-link"><i class="fas fa-smile"></i> Predictions</a>
+    <img class="navbar-nav flex-row ml-md-auto d-none d-md-flex" style="border-radius: 50%;border: none;" src="{% static 'img/shanath.jpg' %}" width="50" height="50">
+
+</nav>
+<div>
+{%  block body %}
+
+{% endblock %}
+</div>
+</body></html>

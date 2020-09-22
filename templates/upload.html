@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+<form action="/Loading/" method="post" enctype="multipart/form-data" align="center">
+        <div class="container">
+    {% csrf_token %}
+    <table onclick="al()">
+        <tr>
+            <td>
+                <img src="{% static 'img/1_FdZnsYrUC6PZjKdvsC6zRA.jpeg'%}" alt="Paris" width="200" height="200" onclick="img()" style="border: gold groove;border-radius: 50%; float: left;">
+            </td>
+        </tr>
+        <tr>
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li class="{{ message.tags }}">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}</tr>
+        <tr>
+            <td>{{ Reg.as_table }}</td>
+        </tr>
+        <tr><td align="right"><button type="submit"><i class="fas fa-file-csv"></i> Upload</button></td></tr>
+    </table></div>
+    <script>
+            function al() {
+                alert("Insert CSV file only and also the grouping column name must be class.The file name must be a single word")
+            }
+            function img() {
+                alert("click on choose file button")
+            }
+        </script>
+</form>
+{% endblock %}

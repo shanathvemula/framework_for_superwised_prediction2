@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12" id="center">
+    <h1 style="color: #ff0000">Framework for Machine Learning Algorithms</h1>
+    <h3>The application for Supervised Data sets</h3>
+            <hr width="800" color="red">
+    <button type="submit" value="get" style="width: auto;" id="aim"><a href="#aim">Get Started <i class="fas fa-arrow-alt-circle-right"></i> </a></button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+<div class="container-fluid">
+    <h1><b><u>Aim</u></b></h1>
+    <p id="Introduction">This application reads the data set(csv file) from end user and explain which algorithm will give the best accurate classification for the uploaded file and prediction for the uploaded file data. In this, we have used six classification techniques. You can check the six algorithms accuracy. With these results, you can conclude that which Algorithm is suitable for handling the categorization problems of data inside the file.<br>
+    </p>
+</div>
+<div class="container-fluid">
+    <h1><b><u>Introduction</u></b></h1>
+    <p>Data is nothing but the organization’s repository. It involves obtaining meaningful insights from raw and unstructured data which is processed through analytical, programming, and business skills. Computer data is information processed or stored by a computer. This information may be in the form of text documents, images, audio clips, software programs, or other types of data. Computer data may be processed by the computer's CPU and is stored in files and folders on the computer's hard disk. Data Science is a detailed study of the flow of information from the colossal amounts of data present in an organization's repository. It involves obtaining meaningful insights from raw and unstructured data which is processed through analytical, programming, and business skills.<br>
+With big data growth in biomedical and health care communities, accurate analysis of data benefits early disease detection, patient care, community services, and taking further steps for organization development. However, the analysis accuracy is reduced when the quality of data is incomplete. Moreover, different regions exhibit unique characteristics of certain regional diseases, which may weaken the prediction of disease outbreaks.<br>
+        These system gives the suggestion of which algorithm is best for data set. By using this suggestion we create different applications. These applications reduce time and cost for check different algorithms for data set. This application gives suggestion to get best accuracy for the data set. By using this suggested algorithm you can create best applications to predict the data in the data set. If the data set is related to the health care system. This system is used for the health monitoring. It had studied the heterogeneous system and achieved the best results best results for customization on tree and simple path cases for heterogeneous system.
+<br id="Tech">Here we check the six algorithms those are Neural Networks, Decision Tree, K-Nearest Neighbors, Naive Bayes, Support Vector Machines and Logistic Regression. And gives the Maximum accuracy rate, Maximum accuracy rate giving algorithm and suggested algorithm as suggestion and gives the accuracy on the test data, accuracy on train data, confusion matrix and etc for each algorithm. By using this result we can choose which one is best for our data set. This is the propose of these application.<br>
+    </p>
+</div>
+<div class="container-fluid">
+    <h1><b><u>Technologies Used</u></b></h1>
+    <div class="row">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img src="{% static 'img/python.png' %}" width="250" height="100"></div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img src="{% static 'img/django.png' %}"width="250" height="100"></div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img src="{% static 'img/ml.jpeg' %}" width="250" height="100"></div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img src="{% static 'img/html.png' %}" width="250" height="100"></div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img src="{% static 'img/css.png' %}" width="250" height="100"></div>
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img src="{% static 'img/bootstrap.jpeg' %}" width="250" height="100"></div><br>
+    </div><br>
+    <div class="row">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><img src="{% static 'img/javascript.png' %}" width="250" height="100"></div>
+    </div><br>
+    <p>The Technologies which are used are show in above. I used the python version 3.8.2 and django version 3.0.5 . In Machine learning i used different modules like sklearn and etc. And also i used the HTML5, CSS3, Java Script and Bootstrap4. Click on predictions button to upload CSV file.</p>
+</div>
+</div>
+{% endblock %}
